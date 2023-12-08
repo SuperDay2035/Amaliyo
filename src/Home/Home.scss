@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    padding: 2rem 3rem;
+    margin: 0;
+}
+
+header{
+
+    padding: 0.5rem 3rem;
+
+    .logo-side{
+        display: flex;
+        color: white;
+        justify-content: space-between  ;
+        align-items: center;
+
+        // Logo Search
+        .Logo-Search{
+           display: flex;
+           
+           align-items: center;
+           .logo-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h5{
+                margin: 0;
+                margin-left: 0.5rem;
+                span{
+                  color: blueviolet;
+                }
+                
+               }
+           }
+       
+
+           .Search{
+              margin-left: 2rem;
+            
+            input{
+                margin-left: 1rem;
+                width: 600px;
+                background-color: transparent;
+                padding: 1rem;
+                font-size: 1rem;
+                outline: none;
+                border: none;  
+                color: white;              
+            }
+            
+            input:focus{
+                background-color: white;
+                color: black;
+
+                .Search:focus{
+                    background-color: wheat;
+                }
+            }
+           
+            }
+
+        }
+
+        // Account Bell
+
+        .Account-Bell{
+            display: flex;
+            align-items: center;
+
+            .Notification{
+                margin-right: 1rem;
+            }
+            .Account{
+              border-radius: 500px;
+              overflow: hidden;
+              border:  3px solid #824c4a;
+              
+              img{
+                width: 35px;
+              }
+
+            }
+        }
+
+    }
+
+
+    
+
+
+}
+
+.home{
+    
+    display: flex;
+    justify-content: space-between;
+
+    .Got-text{
+       
+        h2{
+            color: white;
+        }
+
+        h5{
+            color: white;
+        }
+        span{
+            color: blueviolet;
+        }
+    }
+
+    .Make-book{
+        display: flex;
+    
+
+        .form{
+            input{
+              width: 300px;
+              padding: 0.5rem;
+              font-size: 1rem;
+              outline: none;
+              border: none;
+            };
+        }
+
+        .creat-btn{
+            margin-left: 1rem;
+           button{
+            color: white;
+            background-color: blueviolet;
+            padding: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+            border: none;
+           }
+        }
+
+    }
+
+}
+
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+
+    
+    .card{
+        background-color: white;
+        border-radius: 2rem;
+        width: 35rem;
+        padding: 2rem;
+        margin-right: 1rem;
+        margin-top: 2rem;
+
+        h1{
+
+        }
+
+        p{
+          font-size: 1rem;
+        }
+
+        .datas{
+            display: flex;
+            justify-content: space-between;
+
+            .page{
+                background-color: #EFE6FD;
+                color: blueviolet;
+                border-radius: 20px;
+                display: flex;
+                    align-items: center;
+                    justify-content: center;    
+                p{
+                    font-size: 1rem;
+                    margin: 0;
+                    padding: 0 0.5rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+     .stuff{
+       position: absolute;
+       top: 10px;
+       right: -40px;
+       display: block;;
+       z-index: 1000;
+
+       .btn-pink{
+          background-color: blueviolet;
+         color: white;
+       }
+
+       .btns{
+         display: block;
+         ;
+
+       }
+     }
+
+}
+
+.modals{
+    
+    .overlay{
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        background-color: rgba(49,49,49,0.8);
+    }
+
+    .modal-content{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 1.4;
+        background: white   ;
+        padding: 14px 28px;
+        border-radius: 3px;
+        max-width: 600px;
+        min-width: 300px;
+
+        .main-statement{
+            display: flex;
+            justify-content: space-between;
+
+            .creat-state{
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
+
+            .close-modal{
+                font-size: 24px;
+                
+                button{
+                    background: white;
+                    border: none;
+                }
+            }
+        }
+
+        .forms{
+            display: block;
+            label{
+                font-size: 16px;
+                margin-top: 1rem;
+            }
+            input{
+               width: 100%;
+               color: black;
+               padding: 1rem;
+               border-radius: 10px;
+               border: 2px solid #EFEFEF ;
+               outline: none;
+               font-size: 16px;
+               
+
+            }
+
+        
+        }
+
+        .button{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+
+           
+            .outlined{
+                background-color: white;
+                border: 2px solid blueviolet;
+                color: blueviolet;
+                padding: 0.5rem;
+                font-size: 1rem;
+                margin-right: 2rem;
+                width: 100%;
+            }
+
+            .submit{
+                background-color: blueviolet;
+                border: 2px solid blueviolet;
+                color: white;
+                padding: 0.5rem;
+                font-size: 1rem;
+                margin-left: 2rem;
+                width: 100%;
+            }
+        }
+       
+    }
+
+
+}
